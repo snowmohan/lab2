@@ -12,3 +12,4 @@ for i in range(1,97，1):
     f.write(thr+' '+avg+'\n')
     os.system('killall iperf3')
     f.close()
+    time.sleep(1)
