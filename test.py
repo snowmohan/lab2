@@ -7,6 +7,6 @@ for i in range(1,4):
     a = val.split('/')
     avg = a[-3]
     f = open("a.txt", "a")
-    f.write(avg+thr'\n')
+    f.write(avg+thr+'\n')
     os.system('killall iperf3')
     f.close()
