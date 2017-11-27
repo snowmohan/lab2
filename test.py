@@ -1,5 +1,5 @@
 import os
-for i in range(1,4):
+for i in range(50,53):
     thr = str(i)
     cmd = 'iperf3 -c node-3 '+'-b '+thr+'Mb'+' -t 240'+' &'
     iperf = os.system(cmd)
@@ -7,6 +7,6 @@ for i in range(1,4):
     a = val.split('/')
     avg = a[-3]
     f = open("a.txt", "a")
-    f.write(avg+thr+'\n')
+    f.write(avg+' '+thr+'\n')
     os.system('killall iperf3')
     f.close()
