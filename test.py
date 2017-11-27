@@ -1,7 +1,7 @@
 import os
 for i in range(1,4):
     thr = str(i)
-    cmd = 'iperf3 -c node-3 '+'-b '+thr+'Mb'+' -t 240'
+    cmd = 'iperf3 -c node-3 '+'-b '+thr+'Mb'+' -t 240'+' &'
     iperf = os.system(cmd)
     val = os.popen('ping localhost -c 10').read()
     a = val.split('/')
