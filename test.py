@@ -1,6 +1,6 @@
 import os
 import time
-for i in range(50,56,2):
+for i in range(1,102,10):
     thr = str(i)
     cmd = 'iperf3 -c node-3 '+'-b '+thr+'Mb'+' -t 240'+' &'
     iperf = os.system(cmd)
